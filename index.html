@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Minh — Quant Risk Analyst / Builder</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">MINH — QUANTITATIVE RISK ANALYST</p>
+      <h1>I build small, sharp tools<br>at the edge of markets and code.</h1>
+      <p class="sub">Day job: risk modeling. Off hours: shipping the things I wish existed — a row at a time.</p>
+    </div>
+  </header>
+
+  <div class="ticker-wrap" aria-hidden="true">
+    <div class="ticker-track">
+      <span class="tick"><strong>SENT</strong> Financial Sentiment Dashboard <span class="up">▲ LIVE</span></span>
+      <span class="tick"><strong>NEXT</strong> New position opening <span class="pending">▾ IN PROGRESS</span></span>
+      <span class="tick"><strong>SENT</strong> Financial Sentiment Dashboard <span class="up">▲ LIVE</span></span>
+      <span class="tick"><strong>NEXT</strong> New position opening <span class="pending">▾ IN PROGRESS</span></span>
+      <span class="tick"><strong>SENT</strong> Financial Sentiment Dashboard <span class="up">▲ LIVE</span></span>
+      <span class="tick"><strong>NEXT</strong> New position opening <span class="pending">▾ IN PROGRESS</span></span>
+    </div>
+  </div>
+
+  <main class="wrap">
+    <section class="blotter">
+      <div class="blotter-head">
+        <h2>Positions</h2>
+        <p class="caption">Projects, marked live as they ship.</p>
+      </div>
+
+      <div class="blotter-table" role="table">
+        <div class="row row-head" role="row">
+          <span role="columnheader">Sym</span>
+          <span role="columnheader">Name</span>
+          <span role="columnheader">Type</span>
+          <span role="columnheader">Status</span>
+          <span role="columnheader"></span>
+        </div>
+
+        <a class="row row-link" role="row"
+           href="https://huggingface.co/spaces/REPLACE-ME/sentiment-dashboard"
+           target="_blank" rel="noopener">
+          <span class="sym" role="cell">SENT</span>
+          <span class="name" role="cell">
+            Financial Sentiment Dashboard
+            <span class="desc">Market data + financial news, scored locally with VADER &amp; FinBERT — no API cost.</span>
+          </span>
+          <span class="type" role="cell">NLP / Markets</span>
+          <span class="status status-live" role="cell">● LIVE</span>
+          <span class="arrow" role="cell">→</span>
+        </a>
+
+        <div class="row row-empty" role="row">
+          <span class="sym" role="cell">····</span>
+          <span class="name" role="cell">Next position opening soon</span>
+          <span class="type" role="cell">—</span>
+          <span class="status status-pending" role="cell">○ OPEN</span>
+          <span class="arrow" role="cell"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <h2>About this desk</h2>
+      <p>
+        I work as a quantitative risk analyst, and build independent tools on the side —
+        usually where market data, code, and a genuinely useful question meet.
+        Each project here is live, not a screenshot: open a position above and try it.
+      </p>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-row">
+      <span>© <span id="year"></span> Minh</span>
+      <nav class="foot-links">
+        <a href="mailto:minhnn238@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/minhnn238/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/nnm-psd" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
